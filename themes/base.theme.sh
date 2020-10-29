@@ -139,7 +139,7 @@ function git_clean_branch {
 function git_prompt_minimal_info {
   local ref
   local status
-  local git_status_flags=('--porcelain')
+  local git_status_flags=('--porcelain -unormal')
   SCM_STATE=${SCM_THEME_PROMPT_CLEAN}
 
   if [[ "$(command git config --get bash-it.hide-status)" != "1" ]]; then
